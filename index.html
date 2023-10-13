@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="player-container">
+        <!-- music section -->
+        <div class="img-container">
+            <img src="img/image1.jpg" alt="">
+        </div>
+        <h2 id="title">Here Today</h2>
+        <h3 id="artist">Fretbound</h3>
+        <audio src="music/Fretbound - Here Today.mp3"></audio>
+        <!-- progress bar -->
+        <div class="progress-container" id="progress-container">
+            <div class="progress" id="progress"></div>
+            <div class="duration-wrapper">
+                <span id="current-time">0:00</span>
+                <span id="duration-time">3:06</span>
+            </div>
+        </div>
+        <!-- controls -->
+        <div class="player-controls">
+            <i class="fas fa-backward" id="prev" title="Previous"></i>
+            <i class="fas fa-play main-btn" id="play" title="Play"></i>
+            <i class="fas fa-forward" id="next" title="Next"></i>
+        </div>
+    </div>
+    <!-- script -->
+    <script src="app.js"></script>
+</body>
+</html>
