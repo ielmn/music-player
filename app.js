@@ -6,11 +6,13 @@ const nextBtn = document.getElementById('next');
 const image = document.querySelector('img');
 const songTitle = document.getElementById('title');
 const artist = document.getElementById('artist');
+let backgroundImg = document.getElementById('background-img')
 
 const progressContainer = document.getElementById('progress-container');
 const progress = document.getElementById('progress');
 const timeDuration = document.getElementById('duration-time');
 const timeCurrent = document.getElementById('current-time')
+
 
 //music
 const songs = [
@@ -63,6 +65,7 @@ function loadSong(song){
     artist.textContent = song.artist;
     music.src = `music/${song.name}.mp3`;
     image.src = `img/${song.image}.jpg`;
+    backgroundImg.style.backgroundImage = `url(img/${song.image}.jpg)`;
 }
 
 //random songs on load 
