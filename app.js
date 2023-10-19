@@ -19,7 +19,7 @@ const songs = [
     {
         title: 'Here Today', 
         artist: 'Fretbound',
-        name: 'fretbound - Here Today',
+        name: 'Fretbound - Here Today',
         image: 'image1'
     },
     {
